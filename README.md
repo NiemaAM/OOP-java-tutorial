@@ -707,7 +707,59 @@ class MyClass <T, I> {
 ```
 
 # Part 3: Conditions & Loops
+> [!TIP]
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART3%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](#)
+
+###### Table of contents
+<!--ts-->
+   * [ℹ️ 1. Conditions](#)
+     * [➡️ if](#)
+     * [🔀 switch case](#)
+   * [🔄 2. Loops](#)
+     * [🔁 for](#)
+     * [↪️ for each](#)
+     * [🔃 while](#)
+     * [🔃 do while](#)
+<!--te-->
+
 # Part 4: Console Reading & Printing
+> [!TIP]
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART4%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](#)
+
+###### Table of contents
+<!--ts-->
+   * [✍️ 1. Scanner](#)
+   * [🖨️ 2. Printer](#)
+<!--te-->
+
 # Part 5: Exceptions & Errors Handeling
+> [!TIP]
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART6%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](#)
+
+###### Table of contents
+<!--ts-->
+   * [⚠️ 1. Exceptions](#)
+   * [🛑 2. Exceptions Handeling](#)
+<!--te-->
+
 # Part 6: Serilization & Deserilization
+> [!TIP]
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART6%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](#)
+
+###### Table of contents
+<!--ts-->
+   * [💾 1. Serilization](#)
+   * [📄 2. Deserilization](#)
+<!--te-->
+
 # Part 7: How to create a full project using java
+> [!TIP]
+>
+> [![Java](https://img.shields.io/badge/Java%20BarberShop%20Application%20Exmaple%20With%20JavaFX%20and%20SQLite!-%23ED8B00.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://github.com/NiemaAM/BarberShop-JavaFX-App)
+
+###### Table of contents
+<!--ts-->
+   * [📄 1. Project Structure](#)
+   * [👤 2. User Interface](#)
+   * [🖥 2. Database](#)
+<!--te-->
