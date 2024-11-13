@@ -1,3 +1,5 @@
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)
+
 ###### Table of contents
 <!--ts-->
    * [Introduction: What is OOP?](#introduction-what-is-oop)
