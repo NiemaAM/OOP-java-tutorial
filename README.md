@@ -493,16 +493,16 @@ public class Main {
 ###### Table of contents
 <!--ts-->
    * [🗂️ 1. Collections](#-1-collections)
-     * [Array](#array)
-     * [ArrayList](#arraylist)
-     * [LinkedList](#linkedlist)
-     * [Iterator](#iterator)
-     * [Queue](#queue)
+     * [📚 Array](#-array)
+     * [📃 ArrayList](#-arraylist)
+     * [🔗 LinkedList](#-linkedlist)
+     * [🔄 Iterator](#-iterator)
+     * [📥 Queue](#-queue)
    * [🔣 2. Generics](#-2-generics)
 <!--te-->
 
 ## 🗂️ 1. Collections:
-### Array:
+### 📚 Array:
 Collection of elements of the same datatypes with a fixed size that start at index 0.
 > **Example:**
 >
@@ -529,7 +529,7 @@ public class Main {
 |    1    |    2    |    3    |
 +---------+---------+---------+
 ```
-### ArrayList:
+### 📃 ArrayList:
 
 | **Attribute**              | **ArrayList**                                                                                                     |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -555,7 +555,7 @@ public class Main {
 }
 ```
 
-### LinkedList:
+### 🔗 LinkedList:
 
 | **Attribute**              | **LinkedList**                                                                                                    |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -605,7 +605,7 @@ public class Main {
 +---------+---------+
 ```
 
-### Iterator:
+### 🔄 Iterator:
 
 | **Attribute**              | **Iterator**                                                                                                      |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -630,7 +630,7 @@ public class Main {
 }
 ```
 
-### Queue:
+### 📥 Queue:
 
 | **Attribute**              | **Queue**                                                                                                         |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
