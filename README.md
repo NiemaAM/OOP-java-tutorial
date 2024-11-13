@@ -778,10 +778,10 @@ class MyClass <T, I> {
 ###### Table of contents
 <!--ts-->
    * [📄 1. Project Structure](#-1-project-structure)
-   * [👤 2. User Interface](#-2-user-interface)
-   * [🖥 2. Database](#-2-database)
+   * [🖥 2. User Interface](#-2-user-interface)
+   * [💾 2. Database](#-2-database)
 <!--te-->
 
 ## 📄 1. Project Structure:
-## 👤 2. User Interface:
-## 🖥 2. Database:
+## 🖥 2. User Interface:
+## 💾 2. Database:
