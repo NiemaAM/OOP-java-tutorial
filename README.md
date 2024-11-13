@@ -492,10 +492,10 @@ public class Main {
 }
 ```
 # Part 2: Collections & Generics
-###### Table of contents
 > [!TIP]
 > [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART2%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCKHQ0GQ021T0EMAKHVCKMVQ)
 
+###### Table of contents
 <!--ts-->
    * [🗂️ 1. Collections](#-1-collections)
      * [📚 Array](#-array)
@@ -709,5 +709,5 @@ class MyClass <T, I> {
 # Part 3: Conditions & Loops
 # Part 4: Console Reading & Printing
 # Part 5: Exceptions & Errors Handeling
-# Part 6: Serilization & Deserilization;
+# Part 6: Serilization & Deserilization
 # Part 7: How to create a full project using java
