@@ -490,6 +490,163 @@ public class Main {
 }
 ```
 # Part 2: Collections & Generics
+## 🗂️ 1. Collections:
+### Arrays:
+Collection of elements of the same datatypes with a fixed size that start at index 0.
+> **Example:**
+>
+> `MyArray` is a collection of 3 integers.
+```java
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+      int[] MyArray = new int[3]; // Create an array with 3 elements
+      MyArray[0] = 1; // Set the first element to 1
+      MyArray[1] = 2; // Set the second element to 2
+      MyArray[2] = 3; // Set the third element to 3
+      System.out.println("The Array contains: " + MyArray.lenght + " elements"); // Access the size of the array
+      System.out.println("Element at index 0: " + MyArray[0]); // Access the first element
+      System.out.println("Element at index 1: " + MyArray[1]); // Access the second element
+      System.out.println("Element at index 2: " + MyArray[2]); // Access the third element
+    }
+}
+```
+```bash
++---------+---------+---------+
+| Index 0 | Index 1 | Index 2 |
++---------+---------+---------+
+|    1    |    2    |    3    |
++---------+---------+---------+
+```
+### ArrayList:
+
+| **Attribute**              | **ArrayList**                                                                                                     |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Structure**              | A resizable array implementation in the `java.util` package.                                                      |
+| **Storage**                | Elements are stored in a contiguous block of memory, like an array.                                               |
+| **Access Time**            | Fast random access using an index.                                                                                |
+| **Insertions & Deletions** | Slower for operations in the middle or beginning of the list because elements need to be shifted.                 |
+| **Use Case**               | Good for scenarios where you need fast access to elements but don't frequently insert/remove items in the middle. |
+
+> **Example:**
+>
+> `MyArrayList` is a collection of integers with dynamic sizing.
+```java
+import java.util.ArrayList; // Import the ArrayList class
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+      // Initialize an ArrayList with elements using Arrays.asList()
+      ArrayList<Integer> myArrayList = new ArrayList<>(Arrays.asList(1, 2, 3));
+      // Print the contents of the ArrayList
+      System.out.println(myArrayList); // Output: [1, 2, 3]
+    }
+}
+```
+
+### LinkedList:
+
+| **Attribute**              | **LinkedList**                                                                                                    |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Structure**              | A doubly linked list implementation in the `java.util` package.                                                   |
+| **Storage**                | Elements are stored in nodes, each containing a data element and pointers to the next and previous nodes.         |
+| **Access Time**            | Slower random access because you have to traverse from the start or end.                                          |
+| **Insertions & Deletions** | Faster insertions and deletions since it only requires updating node references.                                  |
+| **Use Case**               | Suitable when you need frequent insertions and deletions, especially in the middle of the list.                   |
+
+> **Example:**
+>
+> `MyLinkedList` is a collection of integers that supports efficient insertions and deletions.
+```java
+import java.util.LinkedList; // Import the LinkedList class
+public class Main {
+    public static void main(String[] args) {  
+      LinkedList<Integer> myLinkedList = new LinkedList<>(); // Create a LinkedList of integers
+      myLinkedList.add(1); // Add 1 to the LinkedList
+      myLinkedList.add(2); // Add 2 to the LinkedList
+      myLinkedList.add(3); // Add 3 to the LinkedList
+      System.out.println("The LinkedList contains: " + myLinkedList.size() + " elements");
+      System.out.println("Element at index 0: " + myLinkedList.get(0)); // Access the first element
+      System.out.println("Element at index 1: " + myLinkedList.get(1)); // Access the second element
+      System.out.println("Element at index 2: " + myLinkedList.get(2)); // Access the third element
+      myLinkedList.remove(1); // Remove the element at index 1
+      myLinkedList.set(1, 2); // Update the new element at index 1 to 2 instead of 3
+    }
+}
+```
+```bash
++---------+---------+---------+
+| Index 0 | Index 1 | Index 2 |
++---------+---------+---------+
+|    1    |    2    |    3    |
++---------+---------+---------+
+# after removing index 1
++---------+---------+
+| Index 0 | Index 1 |
++---------+---------+
+|    1    |    3    |
++---------+---------+
+# after updating index 1 to 2
++---------+---------+
+| Index 0 | Index 1 |
++---------+---------+
+|    1    |    2    |
++---------+---------+
+```
+
+### Iterator:
+
+| **Attribute**              | **Iterator**                                                                                                      |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Structure**              | An interface that provides a way to traverse a collection sequentially without exposing the underlying structure. |
+| **Methods**                | `hasNext()`: Checks if there are more elements in the collection.<br> `next()`: Returns the next element in the collection.<br> `remove()`: Removes the current element from the collection (optional operation).         |
+| **Use Case**               | Useful when you need to iterate through a collection, such as a `List`, `Set`, or `Map`.                          |
+
+> **Example:**
+>
+> Using an Iterator to traverse a LinkedList.
+```java
+import java.util.LinkedList; // Import the LinkedList class
+import java.util.Iterator;  // Import the Iterator interface
+public class Main {
+    public static void main(String[] args) {  
+      LinkedList<Integer> myLinkedList = new LinkedList<>(); // Create a LinkedList of integers
+      Iterator<Integer> iterator = myLinkedList.iterator(); // Get an iterator for the LinkedList
+      while (iterator.hasNext()) {
+        System.out.println(iterator.next()); // Print each element
+      }
+    }
+}
+```
+
+### Queue:
+
+| **Attribute**              | **Queue**                                                                                                         |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Structure**              | An interface that represents a First-In-First-Out (FIFO) data structure.                                          |
+| **Methods**                | `add()` / `offer()`: Add elements to the end of the queue.<br> `remove()` / `poll()`: Remove elements from the front of the queue.<br> `peek()`: Retrieve the element at the front without removing it.         |
+| **Use Case**               | Ideal for scenarios where you need to manage elements in the order they are processed, like task scheduling, handling requests, or buffering. |
+
+> **Example:**
+>
+> Using a Queue to handle tasks.
+```java
+import java.util.LinkedList; // Import the LinkedList class
+import java.util.Queue; // Import the Queue interface
+public class Main {
+    public static void main(String[] args) {  
+      Queue<Integer> taskQueue = new LinkedList<>(); // Create a Queue using LinkedList
+      taskQueue.add(1); // Add task 1 to the Queue
+      taskQueue.add(2); // Add task 2 to the Queue
+      taskQueue.add(3); // Add task 3 to the Queue
+      System.out.println("The Queue contains: " + taskQueue.size() + " tasks");
+      System.out.println("Processing task: " + taskQueue.poll()); // Remove and process the first task
+      System.out.println("Next task to process: " + taskQueue.peek()); // Peek the next task without removing it
+    }
+}
+```
+
+## 🔣 2. Generics:
 # Part 3: Conditions & Loops
 # Part 4: Console Reading & Printing
 # Part 5: Exceptions & Errors Handeling
