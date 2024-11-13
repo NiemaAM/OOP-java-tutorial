@@ -708,11 +708,12 @@ class MyClass <T, I> {
 
 # Part 3: Conditions & Loops
 > [!TIP]
-> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART3%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](#)
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART3%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCKSPVRY58SHRQPVGK1TE98K)
 
 ###### Table of contents
 <!--ts-->
    * [ℹ️ 1. Conditions](#1-conditions)
+     * [↔️ Comparators](#-comparators)
      * [➡️ if](#-if)
      * [🔀 switch case](#-switch-case)
    * [🔄 2. Loops](#-2-loops)
@@ -723,13 +724,130 @@ class MyClass <T, I> {
 <!--te-->
 
 ## ℹ️ 1. Conditions:
+### ↔️ Comparators:
+  - `==` : to compare if two values are equal.
+  - `!=` : to compare if two values are not equal.
+  - `object1.equals(object2)` : to compare objects.
+  - `&&` : AND comparator.
+  - `||` : OR comparator.
 ### ➡️ if:
+> **Example:**
+>
+>
+```java
+public class Main {
+    public static void main(String[] args) {
+        int number = 10;
+        if (number >= 10) {
+            System.out.println("The number is greater than 10.");
+        } else if (number < 10 && number > 5) {
+            System.out.println("The number is between 5 and 10.");
+        } else {
+            System.out.println("The number is 5 less.");
+        }
+    }
+}
+```
 ### 🔀 switch case:
+> **Example:**
+>
+>
+```java
+public class Main {
+    public static void main(String[] args) {
+        int day = 3;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            default:
+                System.out.println("Another day");
+        }
+    }
+}
+```
 ## 🔄 2. Loops:
 ### 🔁 for:
+Get and set data.
+
+> **Example:**
+>
+>
+```java
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> myArrayList = new ArrayList<>();
+        // Initialize an ArrayList
+        for (int nbr = 1; nbr <= 10; nbr++){
+            myArrayList.add(nbr);
+        }
+        // Print the contents of the ArrayList
+        for (int i = 0; i < myArrayList.size(); i++){
+            System.out.println(myArrayList.get(i));
+        }
+    }
+}
+```
 ### ↪️ for each:
+Get data only.
+
+> **Example:**
+>
+>
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> myArrayList = new ArrayList<>(Arrays.asList(1, 2, 3));
+        // Print the contents of the ArrayList
+        for (int element : myArrayList){
+            System.out.println(element);
+        }
+    }
+}
+```
 ### 🔃 while:
+Cannot or can be executed.
+
+> **Example:**
+>
+>
+```java
+public class Main {
+    public static void main(String[] args) {
+        int counter = 0;
+        while (counter < 3) {
+            System.out.println("Counter: " + counter);
+            counter++;
+        }
+    }
+}
+```
 ### 🔃 do while:
+Execute at least once.
+
+> **Example:**
+>
+>
+```java
+public class Main {
+    public static void main(String[] args) {
+        int counter = 0;
+        do {
+            System.out.println("Counter: " + counter);
+            counter++;
+        } while (counter < 3);
+    }
+}
+```
 
 # Part 4: Console Reading & Printing
 > [!TIP]
@@ -779,9 +897,9 @@ class MyClass <T, I> {
 <!--ts-->
    * [📄 1. Project Structure](#-1-project-structure)
    * [🖥 2. User Interface](#-2-user-interface)
-   * [💾 2. Database](#-2-database)
+   * [💾 3. Database](#-3-database)
 <!--te-->
 
 ## 📄 1. Project Structure:
 ## 🖥 2. User Interface:
-## 💾 2. Database:
+## 💾 3. Database:
