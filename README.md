@@ -490,8 +490,19 @@ public class Main {
 }
 ```
 # Part 2: Collections & Generics
+###### Table of contents
+<!--ts-->
+   * [🗂️ 1. Collections](#-1-collections)
+     * [Array](#array)
+     * [ArrayList](#arraylist)
+     * [LinkedList](#linkedlist)
+     * [Iterator](#iterator)
+     * [Queue](#queue)
+   * [🔣 2. Generics](#-2-generics)
+<!--te-->
+
 ## 🗂️ 1. Collections:
-### Arrays:
+### Array:
 Collection of elements of the same datatypes with a fixed size that start at index 0.
 > **Example:**
 >
