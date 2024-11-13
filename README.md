@@ -697,10 +697,10 @@ class MyClass <T, I> {
     public static void main(String[] args) {
       MyClass<Double, String> myClass1 = new MyClass<>(20.5, "object2");
       MyClass<String, Integer> myClass2 = new MyClass<>("object1", 20);
-      System.out.println("Class1 Object1: " + myClass1.getT());
-      System.out.println("Class1 Object2: " + myClass1.getI());
-      System.out.println("Class2 Object1: " + myClass2.getT());
-      System.out.println("Class2 Object2: " + myClass2.getI());
+      System.out.println("Class1 Object1: " + myClass1.getT()); // output: Class1 Object1: 20.5
+      System.out.println("Class1 Object2: " + myClass1.getI()); // output: Class1 Object1: object2
+      System.out.println("Class2 Object1: " + myClass2.getT()); // output: Class1 Object1: object1
+      System.out.println("Class2 Object2: " + myClass2.getI()); // output: Class1 Object1: 20
   }
 ```
 
