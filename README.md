@@ -22,7 +22,7 @@ OOP stands for Object-Oriented Programming.
 
 # Part 1: OOP core concepts
 > [!TIP]
-> [![Click Here to Run The Code!](https://img.shields.io/badge/Run%20The%20Code%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCJX4PA8YQ2RNA4VVYECQ9XZ)
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART1%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCJX4PA8YQ2RNA4VVYECQ9XZ)
 
 ###### Table of contents
 <!--ts-->
@@ -491,6 +491,9 @@ public class Main {
 ```
 # Part 2: Collections & Generics
 ###### Table of contents
+> [!TIP]
+> [![Click Here to Run The Code of this part!](https://img.shields.io/badge/Run%20The%20Code%20FOR%20PART2%20%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCKHQ0GQ021T0EMAKHVCKMVQ)
+
 <!--ts-->
    * [🗂️ 1. Collections](#-1-collections)
      * [📚 Array](#-array)
@@ -508,14 +511,14 @@ Collection of elements of the same datatypes with a fixed size that start at ind
 >
 > `MyArray` is a collection of 3 integers.
 ```java
-import java.util.Arrays;
+import java.util.Arrays; // Import the Arrays class
 public class Main {
     public static void main(String[] args) {
       int[] MyArray = new int[3]; // Create an array with 3 elements
       MyArray[0] = 1; // Set the first element to 1
       MyArray[1] = 2; // Set the second element to 2
       MyArray[2] = 3; // Set the third element to 3
-      System.out.println("The Array contains: " + MyArray.lenght + " elements"); // Access the size of the array
+      System.out.println("The Array contains: " + MyArray.length + " elements"); // Access the size of the array
       System.out.println("Element at index 0: " + MyArray[0]); // Access the first element
       System.out.println("Element at index 1: " + MyArray[1]); // Access the second element
       System.out.println("Element at index 2: " + MyArray[2]); // Access the third element
@@ -582,6 +585,7 @@ public class Main {
       System.out.println("Element at index 2: " + myLinkedList.get(2)); // Access the third element
       myLinkedList.remove(1); // Remove the element at index 1
       myLinkedList.set(1, 2); // Update the new element at index 1 to 2 instead of 3
+      System.out.println(myLinkedList); // Output: [1, 2]
     }
 }
 ```
