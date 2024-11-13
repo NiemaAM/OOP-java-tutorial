@@ -662,6 +662,48 @@ public class Main {
 ```
 
 ## 🔣 2. Generics:
+Objects or functions in a `Generic` class can be generalized with any datatype.
+
+> **Example:**
+>
+> `MyClass` is a class with 2 Generic Objects `object1` of type `T` and `object2` of type `I`.
+```java
+class MyClass <T, I> {
+  private T object1; // Generic Object
+  private I object2;
+  // Constructor
+  public MyClass(T object1, I object2){
+    this.object1 = object1;
+    this.object2 = object2;
+  }
+  // Getters
+  public T getT(){
+    return this.object1;
+  }
+  public I getI(){
+    return this.object2;
+  }
+  // Setters
+  public void setT(T object1){
+    this.object1 = object1;
+  }
+  public void setI(T objec2){
+    this.object2 = object2;
+  }
+}
+```
+```java
+  public class Main {
+    public static void main(String[] args) {
+      MyClass<Double, String> myClass1 = new MyClass<>(20.5, "object2");
+      MyClass<String, Integer> myClass2 = new MyClass<>("object1", 20);
+      System.out.println("Class1 Object1: " + myClass1.getT());
+      System.out.println("Class1 Object2: " + myClass1.getI());
+      System.out.println("Class2 Object1: " + myClass2.getT());
+      System.out.println("Class2 Object2: " + myClass2.getI());
+  }
+```
+
 # Part 3: Conditions & Loops
 # Part 4: Console Reading & Printing
 # Part 5: Exceptions & Errors Handeling
