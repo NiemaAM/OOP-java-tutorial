@@ -712,15 +712,24 @@ class MyClass <T, I> {
 
 ###### Table of contents
 <!--ts-->
-   * [ℹ️ 1. Conditions](#)
-     * [➡️ if](#)
-     * [🔀 switch case](#)
-   * [🔄 2. Loops](#)
-     * [🔁 for](#)
-     * [↪️ for each](#)
-     * [🔃 while](#)
-     * [🔃 do while](#)
+   * [ℹ️ 1. Conditions](#1-conditions)
+     * [➡️ if](#-if)
+     * [🔀 switch case](#-switch-case)
+   * [🔄 2. Loops](#-2-loops)
+     * [🔁 for](#-for)
+     * [↪️ for each](#-for-each)
+     * [🔃 while](#-while)
+     * [🔃 do while](#-do-while)
 <!--te-->
+
+## ℹ️ 1. Conditions:
+### ➡️ if:
+### 🔀 switch case:
+## 🔄 2. Loops:
+### 🔁 for:
+### ↪️ for each:
+### 🔃 while:
+### 🔃 do while:
 
 # Part 4: Console Reading & Printing
 > [!TIP]
@@ -728,9 +737,12 @@ class MyClass <T, I> {
 
 ###### Table of contents
 <!--ts-->
-   * [✍️ 1. Scanner](#)
-   * [🖨️ 2. Printer](#)
+   * [✍️ 1. Scanner](#-1-scanner)
+   * [🖨️ 2. Printer](#-2-printer)
 <!--te-->
+
+## ✍️ 1. Scanner:
+## 🖨️ 2. Printer:
 
 # Part 5: Exceptions & Errors Handeling
 > [!TIP]
@@ -738,9 +750,12 @@ class MyClass <T, I> {
 
 ###### Table of contents
 <!--ts-->
-   * [⚠️ 1. Exceptions](#)
-   * [🛑 2. Exceptions Handeling](#)
+   * [⚠️ 1. Exceptions](#-1-exceptions)
+   * [🛑 2. Exceptions Handeling](#-2-exceptions-handeling)
 <!--te-->
+
+## ⚠️ 1. Exceptions:
+## 🛑 2. Exceptions Handeling:
 
 # Part 6: Serilization & Deserilization
 > [!TIP]
@@ -748,18 +763,25 @@ class MyClass <T, I> {
 
 ###### Table of contents
 <!--ts-->
-   * [💾 1. Serilization](#)
-   * [📄 2. Deserilization](#)
+   * [💾 1. Serilization](#-1-serilization)
+   * [📄 2. Deserilization](#-2-deserilization)
 <!--te-->
+
+## 💾 1. Serilization:
+## 📄 2. Deserilization:
 
 # Part 7: How to create a full project using java
 > [!TIP]
 >
-> [![Java](https://img.shields.io/badge/Java%20BarberShop%20Application%20Exmaple%20With%20JavaFX%20and%20SQLite!-%23ED8B00.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://github.com/NiemaAM/BarberShop-JavaFX-App)
+> [![Java](https://img.shields.io/badge/Java%20BarberShop%20Application%20Example%20With%20JavaFX%20and%20SQLite!-%23ED8B00.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://github.com/NiemaAM/BarberShop-JavaFX-App)
 
 ###### Table of contents
 <!--ts-->
-   * [📄 1. Project Structure](#)
-   * [👤 2. User Interface](#)
-   * [🖥 2. Database](#)
+   * [📄 1. Project Structure](#-1-project-structure)
+   * [👤 2. User Interface](#-2-user-interface)
+   * [🖥 2. Database](#-2-database)
 <!--te-->
+
+## 📄 1. Project Structure:
+## 👤 2. User Interface:
+## 🖥 2. Database:
