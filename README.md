@@ -1,13 +1,19 @@
 
 # Introduction: What is OOP?
+OOP stands for Object-Oriented Programming.
+
+* **Procedural programming** is about writing procedures or methods that perform operations on the data.
+* **Object-oriented programming** is about creating objects that contain both data and methods.
+
+> **Source:**
+> 
+> [![W3Schools](https://img.shields.io/badge/W3Schools-04AA6D?logo=w3schools&logoColor=fff)](https://www.w3schools.com/java/java_oop.asp)
 
 # Part 1: OOP core concepts
 > [!TIP]
 > [![Click Here to Run The Code!](https://img.shields.io/badge/Run%20The%20Code%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCJX4PA8YQ2RNA4VVYECQ9XZ)
 
-Table of contents
-=================
-
+###### Table of contents
 <!--ts-->
    * [1. What is a class?](#1-what-is-a-class)
       * [Components of a class](#components-of-a-class)
@@ -16,7 +22,7 @@ Table of contents
         * [Class Methods](#class-methods-behaviors)
    * [🧰 2. Encapsulation](#-2-encapsulation)
    * [🌐 3. Coherence](#-3-coherence)
-   * [👁️ 4. Information hiding](#-4-information-hiding)
+   * [👁️ 4. Information hiding](#%EF%B8%8F-4-information-hiding)
    * [👨‍👦 5. Inheritance](#-5-inheritance)
    * [👨‍👦‍👦 6. Polymorphism](#-6-polymorphism)
    * [🗔 7. Abstraction](#-7-abstraction)
