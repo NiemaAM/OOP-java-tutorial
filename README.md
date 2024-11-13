@@ -1,3 +1,14 @@
+###### Table of contents
+<!--ts-->
+   * [Introduction: What is OOP?](#introduction-what-is-oop)
+   * [Part 1: OOP core concepts](#part-1-oop-core-concepts)
+   * [Part 2: Collections & Generics](#part-2-collections--generics)
+   * [Part 3: Conditions & Loops](#part-3-conditions--loops)
+   * [Part 4: Console Reading & Printing](#part-4-console-reading--printing)
+   * [Part 5: Exceptions & Errors Handeling](#part-5-exceptions--errors-handeling)
+   * [Part 6: Serilization & Deserilization](#part-6-serilization--deserilization)
+   * [Part 7: How to create a full project using java](#part-7-how-to-create-a-full-project-using-java)
+<!--te-->
 
 # Introduction: What is OOP?
 OOP stands for Object-Oriented Programming.
@@ -477,5 +488,10 @@ public class Main {
       System.out.println(addition.add(1,2,3));
     }
 }
-
 ```
+# Part 2: Collections & Generics
+# Part 3: Conditions & Loops
+# Part 4: Console Reading & Printing
+# Part 5: Exceptions & Errors Handeling
+# Part 6: Serilization & Deserilization;
+# Part 7: How to create a full project using java
