@@ -1,9 +1,35 @@
-[![Run The Code Here!](https://img.shields.io/badge/Run%20The%20Code%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCJX4PA8YQ2RNA4VVYECQ9XZ)
-# OOP core concepts:
+
+# Introduction: What is OOP?
+
+# Part 1: OOP core concepts
+> [!TIP]
+> [![Click Here to Run The Code!](https://img.shields.io/badge/Run%20The%20Code%20Here!-%234CAF50.svg?logo=openjdk&style=for-the-badge&logoColor=white)](https://nam.neetocode.com/niema-alaoui-mdaghri/01JCJX4PA8YQ2RNA4VVYECQ9XZ)
+
+Table of contents
+=================
+
+<!--ts-->
+   * [1. What is a class?](#1-what-is-a-class)
+      * [Components of a class](#components-of-a-class)
+        * [Class Attributes](#class-attributes-properties)
+        * [Class Constructor](#class-constructor)
+        * [Class Methods](#class-methods-behaviors)
+   * [🧰 2. Encapsulation](#-2-encapsulation)
+   * [🌐 3. Coherence](#-3-coherence)
+   * [👁️ 4. Information hiding](#-4-information-hiding)
+   * [👨‍👦 5. Inheritance](#-5-inheritance)
+   * [👨‍👦‍👦 6. Polymorphism](#-6-polymorphism)
+   * [🗔 7. Abstraction](#-7-abstraction)
+   * [🔗 8. Coupling](#-8-coupling)
+   * [🗍 9. Overloading](#-9-overloading)
+   * [🗇 10. Shadowing](#-10-shadowing)
+   * [🏃 11. The Main Class](#-11-the-main-class)
+<!--te-->
+
 ## 1. What is a class?
 A class is a Blueprint or template that defines properties and behaviors.
-### 🌟 **Components of a class** 🌟
-- **Class Attributes (properties):**
+### **Components of a class**
+#### **Class Attributes (properties):**
   - Can be:
     - ⚡ `static`: not an instance of the class (global variable).
     - 🛑 `final`: constant variable.
@@ -20,11 +46,11 @@ A class is a Blueprint or template that defines properties and behaviors.
     - ✨ Always start with a lowercase letter and then capitalize the first letter of every subsequent word. 
     - 💡 For constants (final), use **uppercase** with **underscore** (e.g., `MAX_SIZE`).
 
-- **Class Constructor:** 🛠️
-  - A special method used to initialize objects.
+#### **Class Constructor:**
+  -  🛠️ A special method used to initialize objects.
   - A class can have many constructors with different parameters (overloading).
 
-- **Class Methods (behaviors):**
+#### **Class Methods (behaviors):**
   - Must have a **visibility**: A method can be `public`, `package`, `private`, or `protected`.
   - Must have a **return type**: 
     - `void` (returns nothing) or returns a value (e.g., `int`, `double`, `boolean`, `String`, `Object`...).
@@ -114,7 +140,7 @@ Intra module relationships within a class.
 +--------------------------------+
 ```
 
-## 👁️ 3. Information hiding: 
+## 👁️ 4. Information hiding: 
 Hide sensitive information from the user by:
 - declare class variables/attributes as private.
 - provide public getters and setters to access the data.
@@ -182,7 +208,7 @@ class Animal {
 }
 ```
 
-## 👨‍👦 4. Inheritance:
+## 👨‍👦 5. Inheritance:
 Inheriting attributes and methods from one class to another.
 - *superclass (parent):* the class being inherited from.
 - *subclass (child):* the class that inherits from another class.
@@ -215,7 +241,7 @@ class Dog extends Animal {
 }
 ```
 
-## 👨‍👦‍👦 5. Polymorphism:
+## 👨‍👦‍👦 6. Polymorphism:
 Many classes related to each other by inheritance.
 - *Overriding:* Two methods have the same name and same parameters.
 
@@ -267,7 +293,7 @@ class Cat extends Animal {
     }
 }
 ```
-## 🗔 6. Abstraction: 
+## 🗔 7. Abstraction: 
 Hiding certain details by:
 - *creating abstract classes:* A class that cannot be instantiated and may have both abstract (unimplemented) and concrete (implemented) methods.
 
@@ -340,7 +366,7 @@ public class Dog implements Animal {
     }
 }
 ```
-## 🔗 7. Coupling:
+## 🔗 8. Coupling:
 Inter module relationships between classes (one class depends on the other).
 
 > **Example:**
@@ -413,7 +439,7 @@ class Addition {
 }
 ```
 
-## 🗇 8. Shadowing: 
+## 🗇 10. Shadowing: 
 Variable declared within a specific scope has the same name as a variable declared in an outer scope.
 
 > **Example:**
@@ -421,10 +447,29 @@ Variable declared within a specific scope has the same name as a variable declar
 > The *InnerScope* method `add()` has a `value` variable that shadows the `value` variable declared in the *OuterScope* class `Addition`, meaning the InnerScope version takes precedence within its scope.
 ```java
 class Addition {
-    int value = 5;  // Class-level variable
+    public int value = 5;  // Class-level variable
     public int add(int nbr1, int nbr2) {
         int value = nbr1 + nbr2;  // Method variable, shadows the class-level variable
         return value;
     }
 }
+```
+
+## 🏃 11. the Main Class:
+The `Main` class typically contains the entry point to a Java program, the `main()` method. This is where the program starts executing.
+
+> **Example:**
+>
+> The `Main` class demonstrates how to create instances of an `Addition` classe, call methods `add()`, and access attribute `value`.
+```java
+public class Main {
+    public static void main(String[] args) {
+      Addition addition = new Addition();
+      System.out.println(addition.add(1,2));
+      System.out.println(addition.value);
+      System.out.println(addition.add(1.5,2.5));
+      System.out.println(addition.add(1,2,3));
+    }
+}
+
 ```
